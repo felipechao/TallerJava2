@@ -12,12 +12,12 @@ package abstractfactory;
 public abstract class Computer
 {
 
-    public abstract void configurar();
+    protected abstract void configurar();
     
-    public abstract void ensamblar();
+    protected abstract void ensamblar();
 
-    public abstract void instalar();
+    protected abstract void instalar();
         
-    public abstract void embalar();
+    protected abstract void embalar();
     
 }
