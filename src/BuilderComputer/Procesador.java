@@ -13,6 +13,8 @@ public class Procesador
 {
     private String marca;
     private int nucleos;
+    private int capacidad;
+    private String modelo;
 
     public String getMarca() {
         return marca;
@@ -28,5 +30,33 @@ public class Procesador
 
     public void setNucleos(int nucleos) {
         this.nucleos = nucleos;
+    }
+
+    /**
+     * @return the capacidad
+     */
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    /**
+     * @param capacidad the capacidad to set
+     */
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    /**
+     * @return the modelo
+     */
+    public String getModelo() {
+        return modelo;
+    }
+
+    /**
+     * @param modelo the modelo to set
+     */
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 }

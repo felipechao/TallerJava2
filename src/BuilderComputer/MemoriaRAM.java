@@ -12,6 +12,8 @@ package BuilderComputer;
 public class MemoriaRAM 
 {
     private String marca;
+    private int capacidad;
+    private String modelo;
 
     public String getMarca() {
         return marca;
@@ -19,5 +21,33 @@ public class MemoriaRAM
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    /**
+     * @return the capacidad
+     */
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    /**
+     * @param capacidad the capacidad to set
+     */
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    /**
+     * @return the modelo
+     */
+    public String getModelo() {
+        return modelo;
+    }
+
+    /**
+     * @param modelo the modelo to set
+     */
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 }

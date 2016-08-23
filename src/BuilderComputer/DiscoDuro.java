@@ -13,6 +13,8 @@ public class DiscoDuro
 {
     private String marca;
     private int capacidad;
+    private String estado;
+    private String modelo;
 
     public String getMarca() {
         return marca;
@@ -28,5 +30,33 @@ public class DiscoDuro
 
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
+    }
+
+    /**
+     * @return the estado
+     */
+    public String getEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    /**
+     * @return the modelo
+     */
+    public String getModelo() {
+        return modelo;
+    }
+
+    /**
+     * @param modelo the modelo to set
+     */
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 }

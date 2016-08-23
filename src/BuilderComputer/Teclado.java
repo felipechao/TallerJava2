@@ -12,6 +12,7 @@ package BuilderComputer;
 public class Teclado 
 {
     private String marca;
+    private String color;
 
     public String getMarca() {
         return marca;
@@ -19,5 +20,19 @@ public class Teclado
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    /**
+     * @return the color
+     */
+    public String getColor() {
+        return color;
+    }
+
+    /**
+     * @param color the color to set
+     */
+    public void setColor(String color) {
+        this.color = color;
     }
 }
