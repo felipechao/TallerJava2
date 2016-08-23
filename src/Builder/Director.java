@@ -19,7 +19,7 @@ public class Director
     
     
     
-    Avion getAvion()
+    public Avion getAvion()
     {
        return builder.getAvion();
     }
