@@ -29,6 +29,10 @@ public class ThreadRecibe implements Runnable {
         this.main = main;
     }
 
+    public ThreadRecibe(Socket connection, ChatCliente.Principal main) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public void run() {
         try {
@@ -36,7 +40,7 @@ public class ThreadRecibe implements Runnable {
             do
             {
                 mensaje = (String)entrada.readObject();
-                main.mostrarMensaje(mensaje);
+                main.mostrarMensaje(mensaje + "\n");
             }while(!mensaje.equals("Server -> terminate"));
         } catch (IOException ex) {
         } catch (ClassNotFoundException ex) {

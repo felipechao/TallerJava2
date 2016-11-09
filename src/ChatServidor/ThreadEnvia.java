@@ -41,6 +41,10 @@ public class ThreadEnvia implements Runnable
         });
         
     }
+
+    public ThreadEnvia(Socket connection, ChatCliente.Principal main) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     void enviarMensaje(String mensaje)
@@ -49,7 +53,7 @@ public class ThreadEnvia implements Runnable
             salida.writeObject("Servidor-> " + mensaje);
             salida.flush();
        
-            main.mostrarMensaje("Servidor -> " + mensaje);
+            main.mostrarMensaje("Servidor -> " + mensaje + "\n");
        
         } catch (IOException ex) {
             main.mostrarMensaje("No se puede enviar el mensaje");
